@@ -8,23 +8,8 @@ INFX1606 - Starter kit for Assignment 1.
         <meta charset="utf-8">
         <meta name="author" content="Alexander Moriarty">
         <meta name="description" content="Assignment 1: intro to website creation. Become familiar with uploading files to webpage.">
-        <style type="text/css">
-	header {
-		
-	}
-	#banner {
-		background: url(./media/header_bg_blue.gif) repeat-x left top #0c4a7b; height: 72px;
-	}
-	#topnav {
-		background-color: #5480A2; height 20px
-	}
-	#leftside ul {list-style-type: none; margin:0;padding:0; }
-	#leftside a:link,a:visited{ display:block; font-weight:bold; color:#FFF; background-color:#0c4a7b;
-	width:120px; text-align:center; padding: 4px; text-decoration:none; text-transform:uppercase;}
-	#leftside a:hover,a:active{ background color:#5480A2}
-
-	</style>
-        <title>Intro to website creation</title>
+        <link rel="stylesheet" type="text/css" href="./css/demo.css"/>
+      <title>Intro to website creation</title>
     </head>
     <body><!-- place a comment here which 4 tags I used: -->
 	<!-- an unordered list -->
@@ -37,7 +22,7 @@ INFX1606 - Starter kit for Assignment 1.
 	<!-- create a link at the boottom of the page "Back to Top" and make it functional using named anchors -->
 	<!-- use CSS <style> or inline to style font-colors of some elements different from defaults -->
 	<!-- use CSS <style> or inline to space apart some elements using margin and padding rules -->
-	<div class="wrapper">
+	<div id="container">
 	<header>
 		<div id="banner">
 		A Banner will go here.
@@ -50,7 +35,7 @@ INFX1606 - Starter kit for Assignment 1.
 		</nav>
 		</div>
 	</header>
-	<div id="leftside">
+	<div id="menu">
 	<ul>
 	<li><a href="/~moriarty/photos">Photos</a></li>
 	<li><a href="http://www.dalrobotics.ca">Dal Robotics</a></li>
@@ -71,9 +56,10 @@ INFX1606 - Starter kit for Assignment 1.
 		</div>
 		<div id="footnav">
 		<a href="/~moriarty">Home</a> |
-		<a href="">Back to Top</a> |
+		<a href="#container">Back to Top</a> |
 		<a href="page2.html">About</a>
 		</div>
+	<div class="clear"></div>
 	</footer>
 	</div>
     </body>

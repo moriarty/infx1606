@@ -33,6 +33,7 @@ body {
  div#menu {
     background-color: #0c4a7b;
     width: 15%;
+    min-width: 100px;
     padding: 10px;
     float: left;
  }
