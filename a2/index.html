@@ -11,8 +11,8 @@ INFX1606 - Starter kit for Assignment 1.
         <link rel="stylesheet" type="text/css" href="./css/demo.css"/>
       <title>Intro to website creation</title>
     </head>
-    <body><!-- place a comment here which 4 tags I used: -->
-	<!-- an unordered list -->
+    <body><!-- Four tags I used: article, section, header, nav. footer, address -->
+	<!-- an unordered list: in "id=menu" -->
 	<!-- a table of at least 5x5 at least one colspan and rowspan-->
 	<!-- appropriate use of paragraph and headings to organize the content -->
 	<!-- properly link 2 images using relative paths -->
@@ -25,7 +25,9 @@ INFX1606 - Starter kit for Assignment 1.
 	<div id="container">
 	<header>
 		<div id="banner">
-		A Banner will go here.
+		<h1>
+		Intro to website creation
+		</h1>
 		</div>
 		<div id="topnav">
 		<nav>
@@ -37,13 +39,28 @@ INFX1606 - Starter kit for Assignment 1.
 	</header>
 	<div id="menu">
 	<ul>
-	<li><a href="/~moriarty/photos">Photos</a></li>
-	<li><a href="http://www.dalrobotics.ca">Dal Robotics</a></li>
-	<li><a href="/~moriarty">Home</a></li>
+	<li><a href="index">Intro</a></li>
+        <li><a href="page2">History</a></li>
+        <li><a href="page2#modern">Modern History</a></li>
+        <li><a href="page2#sights">Main Sights</a></li>
+        <li><a href="#modern">Modern History</a></li>
 	</ul>
 	</div>
 	<div id="content">
-	The Content goes here.
+	<article>
+	<h1>Bonn</h1>
+	<section>
+	<p>
+	Bonn is a city on the banks of the Rhine River in the State of North Rhine-Westphalia, Germany. It was the capital of West Germany from 1949 to 1990 and the official seat of government of united Germany from 1990 to 1999. Bonn is located in the very south of the largest metropolitan area in Germany. It is the seat of two major DAX-listed German corporate players.
+	</p><p>
+Even though Berlin became the capital of united Germany in 1990, Bonn stays a centre of politics and administration. Roughly half of all government jobs and many government departments and numerous sub-ministerial level government agencies remain in Bonn. In recognition of this, the former capital holds the one-of-a-kind title of Federal City ("Bundesstadt").
+	<p></p>
+Bonn has developed into a hub of international cooperation in particular in the area of environment and sustainable development. In addition to a number of other international organizations and institutions, such as the IUCN Environmental Law Center (IUCN ELC), the city currently hosts 18 United Nations institutions.[2] Simultaneously, Bonn is establishing itself as a national and international centre of meetings, conventions and conferences, many of which are directly related to the work of the United Nations. A new conference centre capable of hosting thousands of participants is currently under construction in the immediate vicinity of the UN Campus.
+	<p>
+The city is home to the University of Bonn, one of Germany's most reputable institutions of higher learning. From 1597 to 1794, Bonn was the residence of the Archbishops and Prince-electors of Cologne, and is the birthplace of Ludwig van Beethoven (born 1770).
+	</p>
+	</section>
+	</article>
 	</div>
 	<footer>
 		<div id="contact">
@@ -55,9 +72,12 @@ INFX1606 - Starter kit for Assignment 1.
 		</address>
 		</div>
 		<div id="footnav">
+		<nav>
 		<a href="/~moriarty">Home</a> |
 		<a href="#container">Back to Top</a> |
 		<a href="page2.html">About</a>
+		</nav>
+		<a href="http://en.wikipedia.org/wiki/Bonn">Content from Wikipedia</a>
 		</div>
 	<div class="clear"></div>
 	</footer>

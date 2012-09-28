@@ -15,12 +15,13 @@ body {
     border: thin solid #000000;
  }
  header {
-    background-color: #0c4a7b;
+    background-color: #A9A9A9;
     padding: 15px;
     margin: 0px;
     text-align: center;
  }
  div#banner{
+    color: #FFF;
     text-align: left;
  }
  div#topnav{
@@ -31,9 +32,9 @@ body {
  text-decoration: none;
  }
  div#menu {
-    background-color: #0c4a7b;
     width: 15%;
     min-width: 100px;
+    max-width: 150px;
     padding: 10px;
     float: left;
  }
@@ -46,7 +47,7 @@ body {
  div#menu a{
 display:block;
 font-weight:bold;
-color:#FFFFFF;
+color:#000;
 xbackground-color:#98bf21;
 xtext-align:center;
 padding:4px;
