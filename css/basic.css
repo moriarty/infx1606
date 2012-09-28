@@ -48,8 +48,6 @@ body {
 display:block;
 font-weight:bold;
 color:#000;
-xbackground-color:#98bf21;
-xtext-align:center;
 padding:4px;
 text-decoration:none;
 text-transform:uppercase;
@@ -71,7 +69,6 @@ text-transform:uppercase;
     width: 200px;
  }
  div#footnav{
-    xwidth: auto; 
     text-align: right;
  }
  div#footnav a{
