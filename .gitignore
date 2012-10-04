@@ -3,7 +3,5 @@
 *~
 *htaccess
 # Ignore Symbolic links
-/a1/media
-/a1/css
-/a2/media
-/a2/css
+/a*/media
+/a*/css
