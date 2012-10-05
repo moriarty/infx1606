@@ -6,24 +6,24 @@ INFX1606 - Starter kit for Assignment 1.
     <head>
 
         <meta charset="utf-8">
-        <meta name="author" content="Alexander Moriarty">
+        <meta name="author" content="Alexander Moriarty" >
         <meta name="description" content="Assignment 1: intro to website creation. Become familiar with uploading files to webpage.">
         <link rel="stylesheet" type="text/css" href="./css/basic.css"/>
       <title>Intro to website creation</title>
     </head>
     <body>
 
-<!-- Use CSS selector of a basic tag, a class and an ID at least once  -->
-<!-- place a div tag on your page give it a width, centre it place ll content in it. -->
-<!-- Create 3 side by side columns of content at some point  -->
-<!-- Create a header and footer. -->
-<!-- Customize the background with a colour or image -->
-<!-- Use three different styles of borders, whatever colour or syntax -->
-<!-- Style a tag so that it does not appear nor affect the flow of the page -->
-<!-- Style at least a potion of text with an appropriate font for the content -->
+<!-- Use CSS selector of a basic tag, a class and an ID at least once. Done.  -->
+<!-- place a div tag on your page give it a width, centre it place ll content in it. Done -->
+<!-- Create 3 side by side columns of content at some point. Done.  -->
+<!-- Create a header and footer. Done.-->
+<!-- Customize the background with a colour or image. Done.-->
+<!-- Use three different styles of borders, whatever colour or syntax. Done. thin double dashed -->
+<!-- Style a tag so that it does not appear nor affect the flow of the page. Done. -->
+<!-- Style at least a potion of text with an appropriate font for the content (em on robot.) -->
 <!-- Wrap text around a floating image -->
-<!-- Include an element that does not move when page is scrolled. -->
-<!-- Do not allow any content to look out of place. overlapping etc. --> 
+<!-- Include an element that does not move when page is scrolled. Done -->
+<!-- Do not allow any content to look out of place. overlapping etc. ?? Assume I ignore the fixed element. --> 
 	<div id="container">
 	<header>
 		<div id="banner">
@@ -34,39 +34,31 @@ INFX1606 - Starter kit for Assignment 1.
 		<div id="topnav">
 		<nav>
 		<a href="/~moriarty">Home</a> |  
-		<a href="index.html">Page 1</a> |
-		<a href="page2.html">Page 2</a> 
+		<a href="index.html">Robots</a>
 		</nav>
 		</div>
 	</header>
 	<div id="menu">
 	<ul>
-	<li><a href="index">Intro</a></li>
-        <li><a href="page2#content">History</a></li>
-        <li><a href="page2#modern">Modern History</a></li>
-        <li><a href="page2#sights">Main Sights</a></li>
-        <li><a href="page2#modern">Modern History</a></li>
+	<li><a href="index">Robots (A3)</a></li>
+        <li><a href="http://cs.dal.ca/~moriarty/infx1606/a2/">Bonn (A2)</a></li>
+        <li><a href="http://cs.dal.ca/~moriarty/infx1606/a1/">Plain (A1)</a></li>
+        <li><a href="http://cs.dal.ca/~moriarty/photos">Photos</a></li>
 	</ul>
 	</div>
+	<div class="notShown">This is hidden.</div>
 	<div id="content">
-	<article>
-	<h1>Bonn</h1>
-	<section>
-	<p>
-	Bonn is a city on the banks of the Rhine River in the State of North Rhine-Westphalia, Germany. It was the capital of West Germany from 1949 to 1990 and the official seat of government of united Germany from 1990 to 1999. Bonn is located in the very south of the largest metropolitan area in Germany. It is the seat of two major DAX-listed German corporate players.
-	</p><p>
-Even though Berlin became the capital of united Germany in 1990, Bonn stays a centre of politics and administration. Roughly half of all government jobs and many government departments and numerous sub-ministerial level government agencies remain in Bonn. In recognition of this, the former capital holds the one-of-a-kind title of Federal City ("Bundesstadt").
-	<p></p>
-Bonn has developed into a hub of international cooperation in particular in the area of environment and sustainable development. In addition to a number of other international organizations and institutions, such as the IUCN Environmental Law Center (IUCN ELC), the city currently hosts 18 United Nations institutions.[2] Simultaneously, Bonn is establishing itself as a national and international centre of meetings, conventions and conferences, many of which are directly related to the work of the United Nations. A new conference centre capable of hosting thousands of participants is currently under construction in the immediate vicinity of the UN Campus.
-	<p>
-The city is home to the University of Bonn, one of Germany's most reputable institutions of higher learning. From 1597 to 1794, Bonn was the residence of the Archbishops and Prince-electors of Cologne, and is the birthplace of Ludwig van Beethoven (born 1770).
-	</p>
-	</section>
-	<div id="photos">
-	<img src="media/uni-bonn.jpg" width="400" alt="University Bonn">
-	<img src="media/bonn-muenster.jpg" width="400" alt="Bonn Muenster">
+	<div class="newspaper">
+		<p>
+		A <em>robot</em> is a mechanical device that can perform tasks automatically. It may – but need not – be humanoid in appearance. Some robots require some degree of guidance, which may be done using a remote control, or with a computer interface. A robot is usually an electro-mechanical machine that is guided by a program or circuitry. Robots can be autonomous, semi-autonomous or remotely controlled and range from humanoids such as ASIMO and TOPIO to Nano robots, 'swarm' robots, and industrial robots. By mimicking a lifelike appearance or automating movements, a robot may convey a sense of intelligence or thought of its own. The branch of technology that deals with robots is called robotics.
+		</p>
+		<img alt="youBot" src="media/youBot.jpg" class="floatRight" width="100px">
+		<p>
+		Machinery was initially used for repetitive functions, such as lifting water and grinding grain. With technological advances more complex machines were developed, such as those invented by Hero of Alexandria in the 1st century AD, and the automata of Al-Jazari in the 12th century AD. They were not widely adopted as human labour, particularly slave labour, was still inexpensive compared to the capital-intensive machines.
+		</p><p>
+		As mechanical techniques developed through the Industrial age, more practical applications were proposed by Nikola Tesla, who in 1898 designed a radio-controlled boat. Electronics evolved into the driving force of development with the advent of the first electronic autonomous robots created by William Grey Walter in Bristol, England in 1948. The first digital and programmable robot was invented by George Devol in 1954 and was named the Unimate. It was sold to General Motors in 1961 where it was used to lift pieces of hot metal from die casting machines at the Inland Fisher Guide Plant in the West Trenton section of Ewing Township, New Jersey.
+		</p>
 	</div>
-	</article>
 	</div>
 	<footer>
 		<div id="contact">
@@ -83,12 +75,13 @@ The city is home to the University of Bonn, one of Germany's most reputable inst
 		<a href="#content">Back to Top</a> |
 		<a href="page2.html">About</a>
 		</nav>
-		<a href="http://en.wikipedia.org/wiki/Bonn">Content from Wikipedia</a>
+		<a href="http://en.wikipedia.org/wiki/Robot">Content from Wikipedia</a>
 		<br>
 		<a href="http://www.amoriarty.com">Photos are my own</a>
 		</div>
 	<div class="clear"></div>
 	</footer>
 	</div>
+	<div class="posFixed">This stays here.</div>
     </body>
 </html>

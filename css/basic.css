@@ -3,6 +3,28 @@ body {
     font-size:12px;
     font-family:Verdana, Arial, Helvetica, sans-serif;
  }
+ .posFixed{
+ 	padding: 10px;
+ 		width: 100%;
+ 		background-color: #A9A9A9;
+ 		position:fixed;
+ 		left: 0px;
+		bottom:5px;
+ }
+ .newspaper {
+ 	columns:100px 3;
+ 	-webkit-columns:100px 3; /* Safari and Chrome */
+ 	-moz-columns:100px 3; /* Firefox */
+ }
+ .notShown {
+ 	 display: none;
+	 visibility:hidden;	 
+ }
+ img.floatRight { 
+ 	float: right; 
+ 	margin: 4px; 
+ }
+
  div#container {
     width: 80%;
     min-width: 600px;
@@ -19,6 +41,7 @@ body {
     padding: 15px;
     margin: 0px;
     text-align: center;
+    border-bottom: thin dashed;
  }
  div#banner{
     color: #FFF;
@@ -30,6 +53,7 @@ body {
  div#topnav a {
  font-weight:bold; color:#FFF;
  text-decoration: none;
+ 
  }
  div#menu {
     width: 15%;
@@ -51,7 +75,6 @@ color:#000;
 padding:4px;
 text-decoration:none;
 text-transform:uppercase;
-
  }
  div#content {;
     margin-left: 20%;
@@ -62,7 +85,7 @@ text-transform:uppercase;
     clear: both;
     padding: 15px;
     margin: 0px;
-    border-top: thin solid #000000;
+    border-top: double #000000;
  }
  div#contact{
     float: left;
