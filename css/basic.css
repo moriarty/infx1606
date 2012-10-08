@@ -47,14 +47,22 @@ body {
     color: #FFF;
     text-align: left;
  }
+ /*** Navigation ***/
+ /** Top Nav**/
  div#topnav{
     text-align: right;
  } 
- div#topnav a {
- font-weight:bold; color:#FFF;
+ div#topnav a:link, a:visited {
+ font-weight:bold; 
+ color:#FFF;
  text-decoration: none;
- 
+ text-transform: uppercase;
+ padding: 6px;
  }
+ div#topnav a:hover, a:active {
+ background-color: #808080;
+ }
+ /** Menu (side) Nav **/
  div#menu {
     width: 15%;
     min-width: 100px;
@@ -69,12 +77,21 @@ body {
     overflow: hidden;
  }
  div#menu a{
-display:block;
-font-weight:bold;
-color:#000;
-padding:4px;
-text-decoration:none;
-text-transform:uppercase;
+ display:block;
+ font-weight:bold;
+ color:#000;
+ padding:4px;
+ text-decoration:none;
+ text-transform:uppercase;
+ }
+ /** Footer Nav **/
+ div#footnav{
+    text-align: right;
+ }
+ div#footnav a{
+    color: #000;
+    font-weight: bold;
+    text-decoration:none;
  }
  div#content {;
     margin-left: 20%;
@@ -90,14 +107,6 @@ text-transform:uppercase;
  div#contact{
     float: left;
     width: 200px;
- }
- div#footnav{
-    text-align: right;
- }
- div#footnav a{
-    color: #000;
-    font-weight: bold;
-    text-decoration:none;
  }
  div.clear{
     clear:both;
