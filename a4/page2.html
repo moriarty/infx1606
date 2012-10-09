@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+INFX1606 - Starter kit for Assignment 1.
+-->
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Alexander Moriarty" >
+    <meta name="description" content="Assignment 1: intro to website creation. Become familiar with uploading files to webpage.">
+    <title>Intro to website creation</title>
+    <link rel="stylesheet" type="text/css" href="./css/basic.css"/>
+    <script type="text/javascript" scr="./js/scripts.js"></script>
+</head>
+<body>
+	<div id="container">
+	<header>
+		<div id="banner">
+		<h1>
+		Intro to website creation
+		</h1>
+		</div>
+		<div id="topnav">
+		<nav>
+		<a href="/~moriarty">Home</a>
+		<a href="../a1/index.html">1. Plain</a>
+		<a href="../a2/index.html">2. Bonn</a>
+		<a href="../a3/index.html">3. Robots</a>
+		<a href="index.html">4. Version Control</a>
+		</nav>
+		</div>
+	</header>
+	<div id="menu">
+	<ul>
+		<li><a href="index.html#">Introduction</a></li>
+		<li><a href="index.html#overview">Overview</a></li>
+		<li><a href="index.html#strategies">Strategies</a></li>
+		<li><a href="page2.html#">Models</a></li>        
+        <li><a href="page3.html#">Distributed</a></li>
+        <li><a href="http://en.wikipedia.org/wiki/Revision_control">Full Article</a></li>
+        <li><a onclick="alertA4()">Alert</a></li>
+	</ul>
+	</div>
+	<div id="content">
+	<article>
+		<h1>Revision Control</h1>
+		<section id="models">
+			<h2>Source-Management Models</h2>
+			<p>
+			Traditional revision control systems use a centralized model where all the revision control functions take place on a shared server. If two developers try to change the same file at the same time, without some method of managing access the developers may end up overwriting each other's work. Centralized revision control systems solve this problem in one of two different "source management models": file locking and version merging.
+			</p>
+		</section>
+		<section>
+			<h3>Atomic Operations</h3>
+			<p>
+			Computer scientists speak of atomic operations if the system is left in a consistent state even if the operation is interrupted. The commit operation is usually the most critical in this sense. Commits are operations that tell the revision control system you want to make a group of changes final and available to all users. Not all revision control systems have atomic commits; notably, the widely used CVS lacks this feature.
+			</p>
+		</section>
+		<section>
+			<h3>File Locking</h3>
+			<p>
+			The simplest method of preventing "concurrent access" problems involves locking files so that only one developer at a time has write access to the central "repository" copies of those files. Once one developer "checks out" a file, others can read that file, but no one else may change that file until that developer "checks in" the updated version (or cancels the checkout).
+			</p><p>
+			File locking has both merits and drawbacks. It can provide some protection against difficult merge conflicts when a user is making radical changes to many sections of a large file (or group of files). However, if the files are left exclusively locked for too long, other developers may be tempted to bypass the revision control software and change the files locally, leading to more serious problems.
+			</p>
+		</section>
+		<section>
+			<h3>Version Merging</h3>
+			<p>
+			Most version control systems allow multiple developers to edit the same file at the same time. The first developer to "check in" changes to the central repository always succeeds. The system may provide facilities to merge further changes into the central repository, and preserve the changes from the first developer when other developers check in.
+			</p><p>
+			Merging two files can be a very delicate operation, and usually possible only if the data structure is simple, as in text files. The result of a merge of two image files might not result in an image file at all. The second developer checking in code will need to take care with the merge, to make sure that the changes are compatible and that the merge operation does not introduce its own logic errors within the files. These problems limit the availability of automatic or semi-automatic merge operations mainly to simple text based documents, unless a specific merge plugin is available for the file types.
+			</p><p>
+			The concept of a reserved edit can provide an optional means to explicitly lock a file for exclusive write access, even when a merging capability exists.
+			</p>
+		</section>
+		<section>
+			<h3>Baselines, Labels &amp; Tags</h3>
+			<p>
+			Most revision control tools will use only one of these similar terms (baseline, label, tag) to refer to the action of identifying a snapshot ("label the project") or the record of the snapshot ("try it with baseline X"). Typically only one of the terms baseline, label, or tag is used in documentation or discussion; they can be considered synonyms.
+			</p><p>
+			In most projects some snapshots are more significant than others, such as those used to indicate published releases, branches, or milestones.
+			</p><p>
+			When both the term baseline and either of label or tag are used together in the same context, label and tag usually refer to the mechanism within the tool of identifying or making the record of the snapshot, and baseline indicates the increased significance of any given label or tag.
+			</p><p>
+			Most formal discussion of configuration management uses the term baseline.
+			</p>
+		</section>
+	</article>
+	</div>
+	<div id="subcontent">
+
+	</div>
+	<footer>
+		<div id="contact">
+		<address>
+		Alexander Moriarty <br />
+		Dalhousie University <br />
+		Halifax, NS, Canada <br />
+		moriarty AT cs.dal.ca<br />
+		</address>
+		</div>
+		<div id="footnav">
+		<nav>
+		<a href="/~moriarty">Home</a> |
+		<a href="#content">Back to Top</a> |
+		<a href="page2.html">About</a>
+		</nav>
+		<a href="http://en.wikipedia.org/wiki/Revision_control">Content from Wikipedia</a>
+		</div>
+	<div class="clear"></div>
+	</footer>
+	</div>
+    </body>
+</html>

@@ -1,7 +1,7 @@
 body {
     background-image: url(../media/background.jpg);
     font-size:12px;
-    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
  }
  .posFixed{
  	padding: 10px;
@@ -15,9 +15,6 @@ body {
  	columns:100px 3;
  	-webkit-columns:100px 3; /* Safari and Chrome */
  	-moz-columns:100px 3; /* Firefox */
- }
- .newspaper p{
-    margin: 0;
  }
  .notShown {
  	 display: none;
@@ -37,16 +34,14 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
-    border: thin solid #000;
+    border: thin solid #000000;
  }
  header {
-    font-family: rockwell, "Times New Roman", serif;
     background-color: #A9A9A9;
     padding: 15px;
-    padding-bottom: 5px;
     margin: 0px;
     text-align: center;
-    border-bottom: thin solid #000;
+    border-bottom: thin dashed;
  }
  div#banner{
     color: #FFF;
@@ -56,28 +51,23 @@ body {
  /** Top Nav**/
  div#topnav{
     text-align: right;
-    color: #FFF;
  } 
- div#topnav a{
-    cursor: pointer; cursor:  hand;
-    color: #FFF;
- }
  div#topnav a:link, a:visited {
-    font-weight:bold; 
-    color:#FFF;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 5px;
+ font-weight:bold; 
+ color:#FFF;
+ text-decoration: none;
+ text-transform: uppercase;
+ padding: 6px;
  }
  div#topnav a:hover, a:active {
  background-color: #808080;
  }
  /** Menu (side) Nav **/
  div#menu {
-    width: 150px;
-    xmin-width: 100px;
-    xmax-width: 150px;
-    xpadding: 10px;
+    width: 15%;
+    min-width: 100px;
+    max-width: 150px;
+    padding: 10px;
     float: left;
  }
  div#menu ul{
@@ -87,39 +77,32 @@ body {
     overflow: hidden;
  }
  div#menu a{
-    cursor: pointer; cursor:  hand;
-    display:block;
-    font-weight:bold;
-    color:#000;
-    padding:10px;
-    text-decoration:none;
-    text-transform:uppercase;
-    border: thin solid #A9A9A9;
- }
- div#menu a:hover, a:active {
-    background-color: #A9A9A9;
-    border: thin solid #000;
+ display:block;
+ font-weight:bold;
+ color:#000;
+ padding:4px;
+ text-decoration:none;
+ text-transform:uppercase;
  }
  /** Footer Nav **/
  div#footnav{
     text-align: right;
  }
  div#footnav a{
-    cursor: pointer; cursor:  hand;
     color: #000;
     font-weight: bold;
     text-decoration:none;
  }
  div#content {;
-    margin-left: 150px;
+    margin-left: 20%;
     margin-top: 1px;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 30px 10px 10px;
  }
  footer {
     clear: both;
     padding: 15px;
     margin: 0px;
-    border-top: thin solid #000;
+    border-top: double #000000;
  }
  div#contact{
     float: left;

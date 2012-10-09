@@ -8,21 +8,9 @@ INFX1606 - Starter kit for Assignment 1.
     <meta name="description" content="Assignment 1: intro to website creation. Become familiar with uploading files to webpage.">
     <title>Intro to website creation</title>
     <link rel="stylesheet" type="text/css" href="./css/basic.css"/>
-    <script type="text/javascript" scr="./js/scripts.js"></script>
+    <script type="text/javascript" src="./js/scripts.js"></script>
 </head>
 <body>
-
-<!-- Use CSS selector of a basic tag, a class and an ID at least once. Done.  -->
-<!-- place a div tag on your page give it a width, centre it place ll content in it. Done -->
-<!-- Create 3 side by side columns of content at some point. Done.  -->
-<!-- Create a header and footer. Done.-->
-<!-- Customize the background with a colour or image. Done.-->
-<!-- Use three different styles of borders, whatever colour or syntax. Done. thin double dashed -->
-<!-- Style a tag so that it does not appear nor affect the flow of the page. Done. -->
-<!-- Style at least a potion of text with an appropriate font for the content (em on robot.) -->
-<!-- Wrap text around a floating image -->
-<!-- Include an element that does not move when page is scrolled. Done -->
-<!-- Do not allow any content to look out of place. overlapping etc. ?? Assume I ignore the fixed element. --> 
 	<div id="container">
 	<header>
 		<div id="banner">
@@ -32,32 +20,61 @@ INFX1606 - Starter kit for Assignment 1.
 		</div>
 		<div id="topnav">
 		<nav>
-		<a href="/~moriarty">Home</a>  
-		<a href="index.html">Robots</a>
+		<a href="/~moriarty">Home</a>
+		<a href="../a1/index.html">1. Plain</a>
+		<a href="../a2/index.html">2. Bonn</a>
+		<a href="../a3/index.html">3. Robots</a>
+		<a href="index.html">4. Version Control</a>
 		</nav>
 		</div>
 	</header>
 	<div id="menu">
 	<ul>
-	<li><a href="index">Robots (A3)</a></li>
-        <li><a href="http://cs.dal.ca/~moriarty/infx1606/a2/">Bonn (A2)</a></li>
-        <li><a href="http://cs.dal.ca/~moriarty/infx1606/a1/">Plain (A1)</a></li>
-        <li><a href="http://cs.dal.ca/~moriarty/photos">Photos</a></li>
+		<li><a href="index.html#">Introduction</a></li>
+		<li><a href="index.html#overview">Overview</a></li>
+		<li><a href="index.html#strategies">Strategies</a></li>
+		<li><a href="page2.html#">Models</a></li>        
+        <li><a href="page3.html#">Distributed</a></li>
+        <li><a href="http://en.wikipedia.org/wiki/Revision_control">Full Article</a></li>
+        <li><a onclick="alertA4()">Alert</a></li>
 	</ul>
 	</div>
-	<div class="notShown">This is hidden.</div>
 	<div id="content">
-	<div class="newspaper">
+	<article>
+		<h1>Revision Control</h1>
+		<section id="intro">
+		<h2>Introduction</h2>
 		<p>
-		A <em>robot</em> is a mechanical device that can perform tasks automatically. It may – but need not – be humanoid in appearance. Some robots require some degree of guidance, which may be done using a remote control, or with a computer interface. A robot is usually an electro-mechanical machine that is guided by a program or circuitry. Robots can be autonomous, semi-autonomous or remotely controlled and range from humanoids such as ASIMO and TOPIO to Nano robots, 'swarm' robots, and industrial robots. By mimicking a lifelike appearance or automating movements, a robot may convey a sense of intelligence or thought of its own. The branch of technology that deals with robots is called robotics.
-		</p>
-		<img alt="youBot" src="media/youBot.jpg" class="floatRight" width="100px">
-		<p>
-		Machinery was initially used for repetitive functions, such as lifting water and grinding grain. With technological advances more complex machines were developed, such as those invented by Hero of Alexandria in the 1st century AD, and the automata of Al-Jazari in the 12th century AD. They were not widely adopted as human labour, particularly slave labour, was still inexpensive compared to the capital-intensive machines.
+		Revision control, also known as version control and source control (and an aspect of software configuration management), is the management of changes to documents, computer programs, large web sites, and other collections of information. Changes are usually identified by a number or letter code, termed the "revision number", "revision level", or simply "revision". For example, an initial set of files is "revision 1". When the first change is made, the resulting set is "revision 2", and so on. Each revision is associated with a timestamp and the person making the change. Revisions can be compared, restored, and with some types of files, merged.
 		</p><p>
-		As mechanical techniques developed through the Industrial age, more practical applications were proposed by Nikola Tesla, who in 1898 designed a radio-controlled boat. Electronics evolved into the driving force of development with the advent of the first electronic autonomous robots created by William Grey Walter in Bristol, England in 1948. The first digital and programmable robot was invented by George Devol in 1954 and was named the Unimate. It was sold to General Motors in 1961 where it was used to lift pieces of hot metal from die casting machines at the Inland Fisher Guide Plant in the West Trenton section of Ewing Township, New Jersey.
+		The need for a logical way to organize and control revisions has existed for almost as long as writing has existed, but revision control became much more important, and complicated, when the era of computing began. The numbering of book editions and of specification revisions are examples that date back to the print-only era. Today, the most capable (as well as complex) revision control systems are those used in software development, where a team of people may change the same files.
+		</p><p>
+		Version control systems (VCS) most commonly run as stand-alone applications, but revision control is also embedded in various types of software such as word processors,[citation needed] spreadsheets,[citation needed] and in various content management systems.[citation needed] Revision control allows for the ability to revert a page to a previous revision, which is critical for allowing editors to track each other's edits, correct mistakes, and defend against vandalism and spam.
+		</p><p>
+		Software tools for revision control are essential for the organization of multi-developer projects.
+		<p>
+		</section>
+		<section id="overview">
+		<h2>Overview</h2>
+		<p>In computer software engineering, revision control is any practice that tracks and provides control over changes to source code. Software developers sometimes use revision control software to maintain documentation and configuration files as well as source code.
+		</p><p>
+		As teams design, develop and deploy software, it is common for multiple versions of the same software to be deployed in different sites and for the software's developers to be working simultaneously on updates. Bugs or features of the software are often only present in certain versions (because of the fixing of some problems and the introduction of others as the program develops). Therefore, for the purposes of locating and fixing bugs, it is vitally important to be able to retrieve and run different versions of the software to determine in which version(s) the problem occurs. It may also be necessary to develop two versions of the software concurrently (for instance, where one version has bugs fixed, but no new features (branch), while the other version is where new features are worked on (trunk).
+		</p><p>
+		At the simplest level, developers could simply retain multiple copies of the different versions of the program, and label them appropriately. This simple approach has been used on many large software projects. While this method can work, it is inefficient as many near-identical copies of the program have to be maintained. This requires a lot of self-discipline on the part of developers, and often leads to mistakes. Consequently, systems to automate some or all of the revision control process have been developed.
+		</p><p>
+		Moreover, in software development, legal and business practice and other environments, it has become increasingly common for a single document or snippet of code to be edited by a team, the members of which may be geographically dispersed and may pursue different and even contrary interests. Sophisticated revision control that tracks and accounts for ownership of changes to documents and code may be extremely helpful or even necessary in such situations.
+		</p><p>Revision control may also track changes to configuration files, such as those typically stored in /etc or /usr/local/etc on Unix systems. This gives system administrators another way to easily track changes made and a way to roll back to earlier versions should the need arise.
 		</p>
-	</div>
+		</section>
+		<section id="strategies">
+		<h2>Specialized Strategies</h2>
+		<p>
+		Engineering revision control developed from formalized processes based on tracking revisions of early blueprints or bluelines. This system of control implicitly allowed returning to any earlier state of the design, for cases in which an engineering dead-end was reached in the development of the design. A revision table was used to keep track of the changes made. Additionally, the modified areas of the drawing were highlighted using revision clouds.
+		</p><p>
+		Version control is also widespread in business and law. Indeed, "contract redline" and "legal blackline" are some of the earliest forms of revision control,[citation needed] and are still employed in business and law with varying degrees of sophistication. An entire industry has emerged to service the document revision control needs of business and other users, and some of the revision control technology employed in these circles is subtle, powerful, and innovative. The most sophisticated techniques are beginning to be used for the electronic tracking of changes to CAD files (see product data management), supplanting the "manual" electronic implementation of traditional revision control.
+		</p>
+		</section>
+	</article>
 	</div>
 	<div id="subcontent">
 
@@ -75,15 +92,11 @@ INFX1606 - Starter kit for Assignment 1.
 		<nav>
 		<a href="/~moriarty">Home</a> |
 		<a href="#content">Back to Top</a> |
-		<a href="page2.html">About</a>
 		</nav>
-		<a href="http://en.wikipedia.org/wiki/Robot">Content from Wikipedia</a>
-		<br>
-		<a href="http://www.amoriarty.com">Photos are my own</a>
+		<a href="http://en.wikipedia.org/wiki/Revision_control">Content from Wikipedia</a>
 		</div>
 	<div class="clear"></div>
 	</footer>
 	</div>
-	<div class="posFixed">This stays here.</div>
     </body>
 </html>

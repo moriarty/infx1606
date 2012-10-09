@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+INFX1606 - Starter kit for Assignment 1.
+-->
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Alexander Moriarty" >
+    <meta name="description" content="Assignment 1: intro to website creation. Become familiar with uploading files to webpage.">
+    <title>Intro to website creation</title>
+    <link rel="stylesheet" type="text/css" href="./css/basic.css"/>
+    <script type="text/javascript" scr="./js/scripts.js"></script>
+</head>
+<body>
+	<div id="container">
+	<header>
+		<div id="banner">
+		<h1>
+		Intro to website creation
+		</h1>
+		</div>
+		<div id="topnav">
+		<nav>
+		<a href="/~moriarty">Home</a>
+		<a href="../a1/index.html">1. Plain</a>
+		<a href="../a2/index.html">2. Bonn</a>
+		<a href="../a3/index.html">3. Robots</a>
+		<a href="index.html">4. Version Control</a>
+		</nav>
+		</div>
+	</header>
+	<div id="menu">
+	<ul>
+		<li><a href="index.html#">Introduction</a></li>
+		<li><a href="index.html#overview">Overview</a></li>
+		<li><a href="index.html#strategies">Strategies</a></li>
+		<li><a href="page2.html#">Models</a></li>        
+        <li><a href="page3.html#">Distributed</a></li>
+        <li><a href="http://en.wikipedia.org/wiki/Revision_control">Full Article</a></li>
+        <li><a onclick="alertA4()">Alert</a></li>
+	</ul>
+	</div>
+	<div id="content">
+	<article>
+		<h1>Revision Control</h1>
+		<section>
+			<h2>Distributed Revision Control</h2>
+			<p>
+			Distributed revision control systems (DRCS) take a peer-to-peer approach, as opposed to the client-server approach of centralized systems. Rather than a single, central repository on which clients synchronize, each peer's working copy of the codebase is a bona-fide repository. Distributed revision control conducts synchronization by exchanging patches (change-sets) from peer to peer. This results in some important differences from a centralized system:
+			</p>
+			<ul>
+				<li>No canonical, reference copy of the codebase exists by default; only working copies.</li>
+				<li>Common operations (such as commits, viewing history, and reverting changes) are fast, because there is no need to communicate with a central server.</li>
+			</ul>
+			<p>Rather, communication is only necessary when pushing or pulling changes to or from other peers.</p>
+			<ul><li>Each working copy effectively functions as a remote backup of the codebase and of its change-history, providing inherent protection against data loss.</li></ul>
+		</section>
+
+	</article>
+	</div>
+	<div id="subcontent">
+
+	</div>
+	<footer>
+		<div id="contact">
+		<address>
+		Alexander Moriarty <br />
+		Dalhousie University <br />
+		Halifax, NS, Canada <br />
+		moriarty AT cs.dal.ca<br />
+		</address>
+		</div>
+		<div id="footnav">
+		<nav>
+		<a href="/~moriarty">Home</a> |
+		<a href="#content">Back to Top</a> |
+		</nav>
+		<a href="http://en.wikipedia.org/wiki/Revision_control">Content from Wikipedia</a>
+		</div>
+	<div class="clear"></div>
+	</footer>
+	</div>
+    </body>
+</html>
