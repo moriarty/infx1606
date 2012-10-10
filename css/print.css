@@ -1,50 +1,14 @@
 body {
-    background-image: url(../media/background.jpg);
     font-size:12px;
     font-family:Verdana, Arial, Helvetica, sans-serif;
  }
- .posFixed{
- 	padding: 10px;
- 		width: 100%;
- 		background-color: #A9A9A9;
- 		position:fixed;
- 		left: 0px;
-		bottom:5px;
- }
- .newspaper {
- 	columns:100px 3;
- 	-webkit-columns:100px 3; /* Safari and Chrome */
- 	-moz-columns:100px 3; /* Firefox */
- }
- .notShown {
- 	 display: none;
-	 visibility:hidden;	 
- }
- img.floatRight { 
- 	float: right; 
- 	margin: 4px; 
- }
-
- div#container {
-    width: 80%;
-    min-width: 600px;
-    background-color:#FFFFFF;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
-    border: thin solid #000000;
- }
  header {
-    background-color: #A9A9A9;
     padding: 15px;
     margin: 0px;
     text-align: center;
-    border-bottom: thin dashed;
+    border-bottom: thin solid;
  }
  div#banner{
-    color: #FFF;
     text-align: left;
  }
  /*** Navigation ***/
@@ -54,35 +18,13 @@ body {
  } 
  div#topnav a:link, a:visited {
  font-weight:bold; 
- color:#FFF;
  text-decoration: none;
  text-transform: uppercase;
  padding: 6px;
  }
- div#topnav a:hover, a:active {
- background-color: #808080;
- }
  /** Menu (side) Nav **/
  div#menu {
-    width: 15%;
-    min-width: 100px;
-    max-width: 150px;
-    padding: 10px;
-    float: left;
- }
- div#menu ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
- }
- div#menu a{
- display:block;
- font-weight:bold;
- color:#000;
- padding:4px;
- text-decoration:none;
- text-transform:uppercase;
+    display: none;
  }
  /** Footer Nav **/
  div#footnav{
@@ -93,10 +35,13 @@ body {
     font-weight: bold;
     text-decoration:none;
  }
- div#content {;
-    margin-left: 20%;
+ div#content {
+    margin-left: 10px;
     margin-top: 1px;
     padding: 10px 30px 10px 10px;
+ }
+ div#subcontent {
+    display: none;
  }
  footer {
     clear: both;

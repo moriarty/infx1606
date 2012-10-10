@@ -75,9 +75,6 @@ body {
  /** Menu (side) Nav **/
  div#menu {
     width: 150px;
-    xmin-width: 100px;
-    xmax-width: 150px;
-    xpadding: 10px;
     float: left;
  }
  div#menu ul{
