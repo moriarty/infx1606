@@ -21,6 +21,7 @@ body {
  text-decoration: none;
  text-transform: uppercase;
  padding: 6px;
+ color: #000;
  }
  /** Menu (side) Nav **/
  div#menu {
@@ -47,7 +48,7 @@ body {
     clear: both;
     padding: 15px;
     margin: 0px;
-    border-top: double #000000;
+    border-top: thin solid #000;
  }
  div#contact{
     float: left;

@@ -59,7 +59,7 @@ body {
     color: #FFF;
  } 
  div#topnav a{
-    cursor: pointer; cursor:  hand;
+    cursor: pointer;
     color: #FFF;
  }
  div#topnav a:link, a:visited {
@@ -84,7 +84,7 @@ body {
     overflow: hidden;
  }
  div#menu a{
-    cursor: pointer; cursor:  hand;
+    cursor: pointer;
     display:block;
     font-weight:bold;
     color:#000;
@@ -102,7 +102,7 @@ body {
     text-align: right;
  }
  div#footnav a{
-    cursor: pointer; cursor:  hand;
+    cursor: pointer;
     color: #000;
     font-weight: bold;
     text-decoration:none;
