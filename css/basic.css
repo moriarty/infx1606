@@ -5,11 +5,19 @@ body {
  }
  .posFixed{
  	padding: 10px;
- 		width: 100%;
- 		background-color: #A9A9A9;
- 		position:fixed;
- 		left: 0px;
-		bottom:5px;
+ 	width: 100%;
+ 	background-color: #A9A9A9;
+ 	position:fixed;
+ 	left: 0px;
+	bottom:5px;
+ }
+ .gradeFixed{
+	padding: 10px;
+	width: 50px;
+	background-color: #A9A9A9;
+	position: fixed;
+	left: 2px;
+	top: 2px;
  }
  .newspaper {
  	columns:100px 3;
