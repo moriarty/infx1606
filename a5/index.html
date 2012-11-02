@@ -1,35 +1,111 @@
 <!DOCTYPE html>
-
 <!--
-
 INFX1606 - Starter kit for Assignment 5.
-
 -->
-
-
-
     <head>
-
         <meta charset="utf-8">
-        <meta name="author" content="REPLACE WITH YOUR NAME, LEAVE THE QUOTES">
-        <meta name="description" content="REPLACE WITH A DESCRIPTION OF THE ASSIGNMENT, LEAVE THE QUOTES">
+        <meta name="author" content="Alexander Moriarty">
+        <meta name="description" content="Intro to JavaScript">
 
-        <title>REPLACE THIS TEXT WITH YOUR TITLE</title>
+        <title>Degree Form with JS</title>
 
- 		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link rel="stylesheet" type="text/css" href="./css/basic.css" media="screen"/>
+	    <link rel="stylesheet" type="text/css" href="./css/print.css" media="print"/>
+    	<script type="text/javascript" src="./js/scripts.js"></script>
  		
- 		<script type="text/javascript" src="js/scripts.js"></script>
-
     </head>
     <body>
+    	<div id="container">
+		<header>
+			<div id="banner">
+			<h1>
+			Intro to website creation
+			</h1>
+			</div>
+			<div id="topnav">
+			<nav>
+			<a href="/~moriarty">Home</a>
+			<a href="../a1/index.html">1. Plain</a>
+			<a href="../a2/index.html">2. Bonn</a>
+			<a href="../a3/index.html">3. Robots</a>
+			<a href="../a4/index.html">4. Version Control</a>
+			<a href="index.html">5. Javascript Form</a>
+			</nav>
+			</div>
+		</header>
+		<div id="menu">
+			<ul>
+				<li><a onclick="alertA4()">GitInfo</a></li>
+				<li><a href="http://web.cs.dal.ca/~moriarty">My CS Home</a></li>
+				<li><a href="https://github.com/moriarty">GitHub</a></li>
+			</ul>
+			<p>This is a simple javascript form. Error messages use alert, so try not to make too many. If only we could use twitter bootstrap.</p>
+		</div>
+		<div id="content">
+		<h2>Student Information From</h2>
+		<h3>Personal Info</h3>
+		<form id="studentinfo">
+			Name: <input type="text" id="studentname" name="studentname" value="" onblur="studentnameA5();"><br>
+			BannerID: B00<input type="text" id="bannerid" name="bannerid" value="" onkeyup="bannerA5();"> 
+		</form>
+		<h3>Degree Info</h3>
+		<form id="degreeinfo">
+			<label for="bcsci" onmouseover="degreeA5();">B. Computer Science</label>
+			<input type="radio" name="degree" id="bcsci" onmouseover="degreeA5();"><br>
+			<label for="binfx" onmouseover="degreeA5();">B. Informatics</label>
+			<input type="radio" name="degree" id="binfx" onmouseover="degreeA5();"><br>
+			<label for="beced" onmouseover="degreeA5();">B. Electrical Engineering</label>
+			<input type="radio" name="degree" id="beced" onmouseover="degreeA5();"><br>
+			<label for="masys" onmouseover="degreeA5();"> M. Autonomous Systems</label>
+			<input type="radio" name="degree" id="masys" onmouseover="degreeA5();"><br>
+ 		</form>
+		<h3>Course Info</h3>
+		<form id="courseinfo">
+			<input type="checkbox" name="course" id="csci4155" value="csci4155">CSCI 4155: Machine Learning with Robotics<br>
+			<input type="checkbox" name="course" id="csci3110" value="csci3110">CSCI 3110: Algorithms<br>
+			<input type="checkbox" name="course" id="csci3101" value="csci3101">CSCI 3101: Ethics<br>
+			<input type="checkbox" name="course" id="csci2141" value="csci2141">CSCI 2141: Databases<br>
+			<input type="checkbox" name="course" id="infx1606" value="infx1606">INFX 1606: Website Creation<br>
+			<input type="button" name="courses" id="courses" value="Select" onclick="coursesA5();">
+		</form>
+		<h3>Grad Info</h3>
+		<select name="graduation" id="graduation" onchange="graduationA5();">
+			<option value='' selected="selected">Select One</option>
+			<option value='2011'>2011</option>
+			<option value='2012'>2012</option>	
+			<option value='2013' >2013</option>
+			<option value='2014' >2014</option>
+			<option value='2015' >2015</option>
+		</select>
 
+		<h2>Student Information Output</h2>
+		<p id="nameout"></p>
+		<p id="bannerout"></p>
+		<p><em id="degreeout"></em></p>
+		<ul id="coursesout"></ul>
+		<p><strong id="gradout"></strong></p>
 
-
-
-
- 			
- 
- 
-
+		</div>
+		<p> Data on this page is not recorded. </p>
+		<div id="subcontent">
+		</div>
+		<footer>
+			<div id="contact">
+			<address>
+			Alexander Moriarty <br />
+			Dalhousie University <br />
+			Halifax, NS, Canada <br />
+			moriarty AT cs.dal.ca<br />
+			</address>
+			</div>
+			<div id="footnav">
+			<nav>
+			<a href="/~moriarty">Home</a> |
+			<a href="#content">Back to Top</a> 
+			</nav>
+			</div>
+		<div class="clear"></div>
+		</footer> 
+		</div>
     </body>
 </html>
