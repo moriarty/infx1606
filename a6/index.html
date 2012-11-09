@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<!--
+
+INFX1606 - Starter kit for Assignment 6.
+
+-->
+
+
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="author" content="Alex Moriarty">
+        <meta name="description" content="Intro to JQuery and Cookies">
+
+        <title>INFX Assignment 6</title>
+
+ 		<link href="css/a6.css" rel="stylesheet" type="text/css" media="all" />
+
+ 		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script> 		
+ 		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+                <script type="text/javascript" src="js/a6scripts.js"></script>
+
+    </head>
+    <body>
+    	<div id="showHideButton">
+    	<form>
+    		<input type="button" id="show" value="show/hide" onclick="hideSelector();">
+    	</form>
+    	</div>
+    	<fieldset id="selector" class="df">
+    		<legend>Location Selector</legend>
+
+    		<select id="locationSelector" onchange="changeLocation()">
+    			<option value="default" selected="selected">Choose Lotation</option>
+    			<option value="tl">Top Left</option>
+    			<option value="tr">Top Right</option>
+    			<option value="bl">Bottom Left</option>
+    			<option value="br">Bottom Right</option>
+    		</select>
+    	</fieldset>
+    </body>
+</html>
